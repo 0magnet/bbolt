@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	bolt "go.etcd.io/bbolt"
-	"go.etcd.io/bbolt/cmd/bbolt/command"
-	"go.etcd.io/bbolt/internal/btesting"
+	bolt "github.com/0magnet/bbolt"
+	"github.com/0magnet/bbolt/cmd/bbolt/command"
+	"github.com/0magnet/bbolt/internal/btesting"
 )
 
 func TestDumpCommand_Run(t *testing.T) {

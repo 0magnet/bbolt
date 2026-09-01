@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"go.etcd.io/bbolt/version"
+	"github.com/0magnet/bbolt/version"
 )
 
 func newVersionCommand() *cobra.Command {

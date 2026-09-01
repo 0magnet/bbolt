@@ -13,9 +13,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	bolt "go.etcd.io/bbolt"
-	"go.etcd.io/bbolt/errors"
-	"go.etcd.io/bbolt/internal/btesting"
+	bolt "github.com/0magnet/bbolt"
+	"github.com/0magnet/bbolt/errors"
+	"github.com/0magnet/bbolt/internal/btesting"
 )
 
 // TestCursor_RepeatOperations verifies that a cursor can continue to

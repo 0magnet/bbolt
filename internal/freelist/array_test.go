@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"go.etcd.io/bbolt/internal/common"
+	"github.com/0magnet/bbolt/internal/common"
 )
 
 // Ensure that a freelist can find contiguous blocks of pages.

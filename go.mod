@@ -1,4 +1,4 @@
-module go.etcd.io/bbolt
+module github.com/0magnet/bbolt
 
 go 1.25.0
 

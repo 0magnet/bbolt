@@ -1,4 +1,4 @@
-//go:build !windows && !plan9 && !solaris && !aix && !android
+//go:build !windows && !plan9 && !solaris && !aix && !android && !js
 
 package bbolt
 
@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"go.etcd.io/bbolt/errors"
-	"go.etcd.io/bbolt/internal/common"
+	"github.com/0magnet/bbolt/errors"
+	"github.com/0magnet/bbolt/internal/common"
 )
 
 // flock acquires an advisory lock on a file descriptor.

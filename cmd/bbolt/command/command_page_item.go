@@ -9,8 +9,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"go.etcd.io/bbolt/internal/common"
-	"go.etcd.io/bbolt/internal/guts_cli"
+	"github.com/0magnet/bbolt/internal/common"
+	"github.com/0magnet/bbolt/internal/guts_cli"
 )
 
 type pageItemOptions struct {

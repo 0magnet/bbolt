@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	bolt "go.etcd.io/bbolt"
-	"go.etcd.io/bbolt/internal/common"
-	"go.etcd.io/bbolt/internal/surgeon"
+	bolt "github.com/0magnet/bbolt"
+	"github.com/0magnet/bbolt/internal/common"
+	"github.com/0magnet/bbolt/internal/surgeon"
 )
 
 func newSurgeryFreelistCommand() *cobra.Command {
