@@ -1,6 +1,20 @@
+
 <hr>
 
-## v1.5.0(TBD)
+## v1.5.1(TBD)
+
+### BoltDB
+- [Fix version string not updated for v1.5.0 release](https://github.com/etcd-io/bbolt/pull/1230)
+- [Generate unified version output for both 'bbolt version' and 'bbolt -v'](https://github.com/etcd-io/bbolt/pull/1251)
+
+<hr>
+
+## v1.5.0(2026-06-21)
+There isn't any production code change since v1.5.0-rc.0. Only golang patch version is bumped.
+
+<hr>
+
+## v1.5.0-rc.0(2026-05-27)
 
 ### BoltDB
 - Add support for data file size limit, see [PR/929](https://github.com/etcd-io/bbolt/pull/929) and [PR/1210](https://github.com/etcd-io/bbolt/pull/1210)
