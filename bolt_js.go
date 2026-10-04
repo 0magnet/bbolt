@@ -23,6 +23,9 @@ import (
 // flock acquires an advisory lock on a file descriptor. No-op on js.
 func flock(_ *DB, _ bool, _ time.Duration) error { return nil }
 
+// The lock never waits on js, so the retry interval is unused here.
+var _ = flockRetryTimeout
+
 // funlock releases an advisory lock on a file descriptor. No-op on js.
 func funlock(_ *DB) error { return nil }
 

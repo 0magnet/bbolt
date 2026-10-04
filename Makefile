@@ -40,6 +40,7 @@ fmt:
 .PHONY: lint
 lint:
 	golangci-lint run ./...
+	GOOS=js GOARCH=wasm golangci-lint run ./...
 
 .PHONY: test
 test:

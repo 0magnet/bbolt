@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
+	gofail "go.etcd.io/gofail/runtime"
 
 	bolt "github.com/0magnet/bbolt"
 	"github.com/0magnet/bbolt/errors"
 	"github.com/0magnet/bbolt/internal/btesting"
 	"github.com/0magnet/bbolt/internal/common"
 	"github.com/0magnet/bbolt/internal/guts_cli"
-	gofail "go.etcd.io/gofail/runtime"
 )
 
 func TestFailpoint_MapFail(t *testing.T) {
