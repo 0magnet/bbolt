@@ -1501,10 +1501,7 @@ func TestDBUnmap(t *testing.T) {
 
 	require.NoError(t, db.DB.Close())
 
-	// Ignore the following error:
-	// Error: copylocks: call of reflect.ValueOf copies lock value: github.com/0magnet/bbolt.DB contains sync.Once contains sync.Mutex (govet)
-	//nolint:govet
-	v := reflect.ValueOf(*db.DB)
+	v := reflect.ValueOf(db.DB).Elem()
 	dataref := v.FieldByName("dataref")
 	data := v.FieldByName("data")
 	datasz := v.FieldByName("datasz")
